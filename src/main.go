@@ -1,13 +1,14 @@
 package main
 
 import (
+	"fmt"
 	_ "gopkg.in/mgo.v2"
 	router "routers"
 )
 
-func main(){
+func main() {
 
-	router:=router.InitRouter()
-
+	router := router.InitRouter()
+	fmt.Println("test")
 	router.Run(":8000")
 }
